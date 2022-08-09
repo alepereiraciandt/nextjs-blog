@@ -1,12 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../../components/layout';
 
 export default function firsPost() {
     return (
         <>
         <Head>
             <title>First Post</title>
+            <script src="https://connect.facebook.net/en_US/sdk.js" />
         </Head>
             <h1>First Post</h1>
             <h2>
@@ -22,6 +24,7 @@ export default function firsPost() {
                     alt="White laces"
                 />
             </div>
+            <Layout />
         </>
     )
 }
